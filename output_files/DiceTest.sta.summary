@@ -1,0 +1,885 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'buzzer_test:inst|div2:inst2|cnt'
+Slack : -7.423
+TNS   : -180.879
+
+Type  : Slow 1100mV 85C Model Setup 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : -6.232
+TNS   : -166.166
+
+Type  : Slow 1100mV 85C Model Setup 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -5.686
+TNS   : -171.336
+
+Type  : Slow 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -5.067
+TNS   : -119.042
+
+Type  : Slow 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -4.239
+TNS   : -21.366
+
+Type  : Slow 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -3.544
+TNS   : -12.034
+
+Type  : Slow 1100mV 85C Model Setup 'judge:inst14|op[1]'
+Slack : -3.436
+TNS   : -15.046
+
+Type  : Slow 1100mV 85C Model Setup 'controlStateToDisplay:inst12|state[0]'
+Slack : -2.851
+TNS   : -16.428
+
+Type  : Slow 1100mV 85C Model Setup 'debounce_g:inst9|1'
+Slack : -1.688
+TNS   : -5.759
+
+Type  : Slow 1100mV 85C Model Setup 'buzzer_test:inst|div10_t:inst1|2'
+Slack : -1.669
+TNS   : -8.154
+
+Type  : Slow 1100mV 85C Model Setup 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : -1.655
+TNS   : -12.736
+
+Type  : Slow 1100mV 85C Model Setup 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : -1.613
+TNS   : -10.040
+
+Type  : Slow 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst|2'
+Slack : -1.580
+TNS   : -6.645
+
+Type  : Slow 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -1.511
+TNS   : -5.322
+
+Type  : Slow 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -1.437
+TNS   : -6.284
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -0.817
+TNS   : -9.032
+
+Type  : Slow 1100mV 85C Model Setup 'Sw'
+Slack : -0.595
+TNS   : -0.742
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -2.710
+TNS   : -16.074
+
+Type  : Slow 1100mV 85C Model Hold 'Sw'
+Slack : -2.255
+TNS   : -4.377
+
+Type  : Slow 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -0.940
+TNS   : -6.577
+
+Type  : Slow 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -0.886
+TNS   : -0.886
+
+Type  : Slow 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -0.883
+TNS   : -1.550
+
+Type  : Slow 1100mV 85C Model Hold 'controlStateToDisplay:inst12|state[0]'
+Slack : -0.763
+TNS   : -3.234
+
+Type  : Slow 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -0.763
+TNS   : -1.487
+
+Type  : Slow 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst|2'
+Slack : -0.686
+TNS   : -1.363
+
+Type  : Slow 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -0.368
+TNS   : -0.507
+
+Type  : Slow 1100mV 85C Model Hold 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'buzzer_test:inst|div10_t:inst1|2'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : 0.558
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : 0.586
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : 0.676
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'buzzer_test:inst|div2:inst2|cnt'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'judge:inst14|op[1]'
+Slack : 0.714
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'debounce_g:inst9|1'
+Slack : 0.742
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -2.907
+TNS   : -8.707
+
+Type  : Slow 1100mV 85C Model Recovery 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -1.905
+TNS   : -5.701
+
+Type  : Slow 1100mV 85C Model Removal 'clk_gen:inst3|div10_t:inst5|2'
+Slack : 1.149
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'clk_gen:inst3|div10_t:inst4|2'
+Slack : 1.623
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -0.724
+TNS   : -49.681
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : -0.724
+TNS   : -44.617
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -0.724
+TNS   : -38.963
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'buzzer_test:inst|div2:inst2|cnt'
+Slack : -0.724
+TNS   : -38.640
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -15.937
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : -0.724
+TNS   : -10.116
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -0.724
+TNS   : -8.879
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : -0.724
+TNS   : -8.828
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -0.724
+TNS   : -8.155
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'buzzer_test:inst|div10_t:inst1|2'
+Slack : -0.724
+TNS   : -6.838
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst|2'
+Slack : -0.724
+TNS   : -5.743
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -0.724
+TNS   : -5.613
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'debounce_g:inst9|1'
+Slack : -0.724
+TNS   : -5.606
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'judge:inst14|op[1]'
+Slack : -0.724
+TNS   : -5.595
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -0.724
+TNS   : -4.549
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'controlStateToDisplay:inst12|state[0]'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Sw'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'buzzer_test:inst|div2:inst2|cnt'
+Slack : -7.671
+TNS   : -183.199
+
+Type  : Slow 1100mV 0C Model Setup 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : -6.551
+TNS   : -169.862
+
+Type  : Slow 1100mV 0C Model Setup 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -6.047
+TNS   : -178.611
+
+Type  : Slow 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -5.070
+TNS   : -118.788
+
+Type  : Slow 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -4.224
+TNS   : -21.304
+
+Type  : Slow 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -3.593
+TNS   : -12.320
+
+Type  : Slow 1100mV 0C Model Setup 'judge:inst14|op[1]'
+Slack : -3.540
+TNS   : -15.540
+
+Type  : Slow 1100mV 0C Model Setup 'controlStateToDisplay:inst12|state[0]'
+Slack : -2.824
+TNS   : -15.859
+
+Type  : Slow 1100mV 0C Model Setup 'debounce_g:inst9|1'
+Slack : -1.791
+TNS   : -6.007
+
+Type  : Slow 1100mV 0C Model Setup 'buzzer_test:inst|div10_t:inst1|2'
+Slack : -1.769
+TNS   : -8.378
+
+Type  : Slow 1100mV 0C Model Setup 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : -1.750
+TNS   : -13.044
+
+Type  : Slow 1100mV 0C Model Setup 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : -1.696
+TNS   : -10.116
+
+Type  : Slow 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst|2'
+Slack : -1.653
+TNS   : -6.733
+
+Type  : Slow 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -1.585
+TNS   : -5.452
+
+Type  : Slow 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -1.437
+TNS   : -6.366
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -0.987
+TNS   : -11.241
+
+Type  : Slow 1100mV 0C Model Setup 'Sw'
+Slack : -0.586
+TNS   : -0.695
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -2.557
+TNS   : -16.280
+
+Type  : Slow 1100mV 0C Model Hold 'Sw'
+Slack : -2.489
+TNS   : -4.791
+
+Type  : Slow 1100mV 0C Model Hold 'controlStateToDisplay:inst12|state[0]'
+Slack : -1.030
+TNS   : -4.350
+
+Type  : Slow 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -0.902
+TNS   : -5.716
+
+Type  : Slow 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -0.823
+TNS   : -0.823
+
+Type  : Slow 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -0.711
+TNS   : -1.195
+
+Type  : Slow 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -0.539
+TNS   : -0.994
+
+Type  : Slow 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst|2'
+Slack : -0.449
+TNS   : -0.889
+
+Type  : Slow 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -0.243
+TNS   : -0.243
+
+Type  : Slow 1100mV 0C Model Hold 'buzzer_test:inst|div10_t:inst1|2'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : 0.535
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : 0.547
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : 0.562
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : 0.623
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'buzzer_test:inst|div2:inst2|cnt'
+Slack : 0.662
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'judge:inst14|op[1]'
+Slack : 0.702
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'debounce_g:inst9|1'
+Slack : 0.704
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -2.820
+TNS   : -8.442
+
+Type  : Slow 1100mV 0C Model Recovery 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -1.889
+TNS   : -5.649
+
+Type  : Slow 1100mV 0C Model Removal 'clk_gen:inst3|div10_t:inst5|2'
+Slack : 1.057
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'clk_gen:inst3|div10_t:inst4|2'
+Slack : 1.514
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -0.724
+TNS   : -50.425
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : -0.724
+TNS   : -45.053
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -0.724
+TNS   : -38.925
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'buzzer_test:inst|div2:inst2|cnt'
+Slack : -0.724
+TNS   : -38.510
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -15.951
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : -0.724
+TNS   : -10.061
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -0.724
+TNS   : -8.888
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : -0.724
+TNS   : -8.832
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -0.724
+TNS   : -8.184
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'buzzer_test:inst|div10_t:inst1|2'
+Slack : -0.724
+TNS   : -6.831
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst|2'
+Slack : -0.724
+TNS   : -5.721
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'judge:inst14|op[1]'
+Slack : -0.724
+TNS   : -5.603
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -0.724
+TNS   : -5.593
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'debounce_g:inst9|1'
+Slack : -0.724
+TNS   : -5.591
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -0.724
+TNS   : -4.537
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'controlStateToDisplay:inst12|state[0]'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Sw'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'buzzer_test:inst|div2:inst2|cnt'
+Slack : -3.018
+TNS   : -67.836
+
+Type  : Fast 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -2.107
+TNS   : -8.168
+
+Type  : Fast 1100mV 85C Model Setup 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : -2.003
+TNS   : -54.187
+
+Type  : Fast 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -1.983
+TNS   : -43.144
+
+Type  : Fast 1100mV 85C Model Setup 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -1.902
+TNS   : -59.884
+
+Type  : Fast 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -1.809
+TNS   : -5.759
+
+Type  : Fast 1100mV 85C Model Setup 'judge:inst14|op[1]'
+Slack : -1.300
+TNS   : -5.825
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -0.813
+TNS   : -4.852
+
+Type  : Fast 1100mV 85C Model Setup 'controlStateToDisplay:inst12|state[0]'
+Slack : -0.726
+TNS   : -3.650
+
+Type  : Fast 1100mV 85C Model Setup 'debounce_g:inst9|1'
+Slack : -0.302
+TNS   : -0.954
+
+Type  : Fast 1100mV 85C Model Setup 'buzzer_test:inst|div10_t:inst1|2'
+Slack : -0.296
+TNS   : -1.292
+
+Type  : Fast 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst|2'
+Slack : -0.296
+TNS   : -1.085
+
+Type  : Fast 1100mV 85C Model Setup 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : -0.283
+TNS   : -2.018
+
+Type  : Fast 1100mV 85C Model Setup 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : -0.265
+TNS   : -1.396
+
+Type  : Fast 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -0.264
+TNS   : -0.885
+
+Type  : Fast 1100mV 85C Model Setup 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -0.239
+TNS   : -0.911
+
+Type  : Fast 1100mV 85C Model Setup 'Sw'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Sw'
+Slack : -1.254
+TNS   : -2.427
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -1.000
+TNS   : -7.080
+
+Type  : Fast 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -0.592
+TNS   : -0.592
+
+Type  : Fast 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -0.560
+TNS   : -5.094
+
+Type  : Fast 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -0.559
+TNS   : -1.016
+
+Type  : Fast 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -0.536
+TNS   : -1.056
+
+Type  : Fast 1100mV 85C Model Hold 'controlStateToDisplay:inst12|state[0]'
+Slack : -0.527
+TNS   : -2.477
+
+Type  : Fast 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst|2'
+Slack : -0.500
+TNS   : -0.992
+
+Type  : Fast 1100mV 85C Model Hold 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -0.334
+TNS   : -0.611
+
+Type  : Fast 1100mV 85C Model Hold 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -0.029
+TNS   : -0.029
+
+Type  : Fast 1100mV 85C Model Hold 'buzzer_test:inst|div10_t:inst1|2'
+Slack : 0.109
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'judge:inst14|op[1]'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'buzzer_test:inst|div2:inst2|cnt'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'debounce_g:inst9|1'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -0.783
+TNS   : -2.347
+
+Type  : Fast 1100mV 85C Model Recovery 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -0.328
+TNS   : -0.982
+
+Type  : Fast 1100mV 85C Model Removal 'clk_gen:inst3|div10_t:inst4|2'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'clk_gen:inst3|div10_t:inst5|2'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.470
+TNS   : -3.208
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -0.089
+TNS   : -1.356
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Sw'
+Slack : -0.054
+TNS   : -0.102
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst5|2'
+Slack : 0.008
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'buzzer_test:inst|div2:inst2|cnt'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst3|2'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : 0.037
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'buzzer_test:inst|div10_t:inst1|2'
+Slack : 0.065
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst|2'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst2|2'
+Slack : 0.119
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'judge:inst14|op[1]'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : 0.133
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst4|2'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'debounce_g:inst9|1'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst1|2'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'controlStateToDisplay:inst12|state[0]'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'buzzer_test:inst|div2:inst2|cnt'
+Slack : -2.827
+TNS   : -63.627
+
+Type  : Fast 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -2.030
+TNS   : -7.667
+
+Type  : Fast 1100mV 0C Model Setup 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : -1.873
+TNS   : -49.456
+
+Type  : Fast 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -1.861
+TNS   : -39.449
+
+Type  : Fast 1100mV 0C Model Setup 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -1.760
+TNS   : -55.763
+
+Type  : Fast 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -1.757
+TNS   : -5.541
+
+Type  : Fast 1100mV 0C Model Setup 'judge:inst14|op[1]'
+Slack : -1.223
+TNS   : -5.456
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -0.765
+TNS   : -4.183
+
+Type  : Fast 1100mV 0C Model Setup 'controlStateToDisplay:inst12|state[0]'
+Slack : -0.671
+TNS   : -3.191
+
+Type  : Fast 1100mV 0C Model Setup 'debounce_g:inst9|1'
+Slack : -0.266
+TNS   : -0.791
+
+Type  : Fast 1100mV 0C Model Setup 'buzzer_test:inst|div10_t:inst1|2'
+Slack : -0.260
+TNS   : -1.048
+
+Type  : Fast 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst|2'
+Slack : -0.251
+TNS   : -0.845
+
+Type  : Fast 1100mV 0C Model Setup 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : -0.246
+TNS   : -1.679
+
+Type  : Fast 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -0.228
+TNS   : -0.714
+
+Type  : Fast 1100mV 0C Model Setup 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : -0.224
+TNS   : -1.046
+
+Type  : Fast 1100mV 0C Model Setup 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -0.197
+TNS   : -0.704
+
+Type  : Fast 1100mV 0C Model Setup 'Sw'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Sw'
+Slack : -1.260
+TNS   : -2.430
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.903
+TNS   : -6.825
+
+Type  : Fast 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -0.578
+TNS   : -0.578
+
+Type  : Fast 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst3|2'
+Slack : -0.538
+TNS   : -5.150
+
+Type  : Fast 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst1|2'
+Slack : -0.515
+TNS   : -0.935
+
+Type  : Fast 1100mV 0C Model Hold 'controlStateToDisplay:inst12|state[0]'
+Slack : -0.508
+TNS   : -2.432
+
+Type  : Fast 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst2|2'
+Slack : -0.494
+TNS   : -0.960
+
+Type  : Fast 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst|2'
+Slack : -0.453
+TNS   : -0.901
+
+Type  : Fast 1100mV 0C Model Hold 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -0.315
+TNS   : -0.567
+
+Type  : Fast 1100mV 0C Model Hold 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -0.043
+TNS   : -0.054
+
+Type  : Fast 1100mV 0C Model Hold 'buzzer_test:inst|div10_t:inst1|2'
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : 0.086
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'judge:inst14|op[1]'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'buzzer_test:inst|div2:inst2|cnt'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'debounce_g:inst9|1'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clk_gen:inst3|div10_t:inst4|2'
+Slack : -0.675
+TNS   : -2.023
+
+Type  : Fast 1100mV 0C Model Recovery 'clk_gen:inst3|div10_t:inst5|2'
+Slack : -0.271
+TNS   : -0.811
+
+Type  : Fast 1100mV 0C Model Removal 'clk_gen:inst3|div10_t:inst4|2'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'clk_gen:inst3|div10_t:inst5|2'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.484
+TNS   : -3.351
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Sw'
+Slack : -0.067
+TNS   : -0.129
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'mario_win_test:inst34|div2:inst2|cnt'
+Slack : -0.060
+TNS   : -0.718
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst5|2'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'buzzer_test:inst|div2:inst2|cnt'
+Slack : 0.038
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst3|2'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'mario_lose_test:inst32|div2:inst2|cnt'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'buzzer_test:inst|div10_t:inst1|2'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst|2'
+Slack : 0.089
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst2|2'
+Slack : 0.122
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'mario_lose_test:inst32|div10_t:inst1|2'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'judge:inst14|op[1]'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'mario_win_test:inst34|div10_t:inst1|2'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst4|2'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'debounce_g:inst9|1'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_gen:inst3|div10_t:inst1|2'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'controlStateToDisplay:inst12|state[0]'
+Slack : 0.341
+TNS   : 0.000
+
+------------------------------------------------------------

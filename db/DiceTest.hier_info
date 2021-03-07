@@ -1,0 +1,925 @@
+|DiceTest
+o6 <= ShowDice:inst6.o[6]
+clk => clk_gen:inst3.clock
+clk => buzzer_test:inst.clock
+clk => mario_win_test:inst34.clock
+clk => mario_lose_test:inst32.clock
+Sw => Dice:inst11.sw
+Sw => Dice:inst8.sw
+Sw => inst17.IN0
+Sw => buzzer_test:inst.sw
+pulse2 => debounce_g:inst5.Key_in
+pulse2 => final:inst13.reset1
+pulse2 => buzzer_test:inst.reset
+pulse2 => det8x8:inst25.p2
+pulse2 => mario_win_test:inst34.reset
+pulse2 => mario_lose_test:inst32.reset
+o5 <= ShowDice:inst6.o[5]
+o3 <= ShowDice:inst6.o[3]
+o2 <= ShowDice:inst6.o[2]
+o1 <= ShowDice:inst6.o[1]
+o0 <= ShowDice:inst6.o[0]
+o4 <= ShowDice:inst6.o[4]
+COM <= <VCC>
+r4 <= ShowDice:inst7.o[4]
+r5 <= ShowDice:inst7.o[5]
+r6 <= ShowDice:inst7.o[6]
+r3 <= ShowDice:inst7.o[3]
+r2 <= ShowDice:inst7.o[2]
+r1 <= ShowDice:inst7.o[1]
+r0 <= ShowDice:inst7.o[0]
+DE2 <= <GND>
+a6 <= transferVectorToBit7:inst16.y6
+pulse1 => debounce_g:inst9.Key_in
+pulse1 => Win_or_Lose:inst21.pulse2
+a5 <= transferVectorToBit7:inst16.y5
+a4 <= transferVectorToBit7:inst16.y4
+a3 <= transferVectorToBit7:inst16.y3
+a2 <= transferVectorToBit7:inst16.y2
+a1 <= transferVectorToBit7:inst16.y1
+a0 <= transferVectorToBit7:inst16.y0
+DE1 <= sevenSegmentDisplayer2:inst15.DE1
+DE3 <= sevenSegmentDisplayer2:inst15.DE3
+r21 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+buzzer <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|ShowDice:inst6
+Z[0] => Mux0.IN10
+Z[0] => Mux1.IN10
+Z[0] => Mux2.IN10
+Z[0] => Mux3.IN10
+Z[0] => Mux4.IN10
+Z[0] => Mux5.IN10
+Z[0] => Mux6.IN10
+Z[1] => Mux0.IN9
+Z[1] => Mux1.IN9
+Z[1] => Mux2.IN9
+Z[1] => Mux3.IN9
+Z[1] => Mux4.IN9
+Z[1] => Mux5.IN9
+Z[1] => Mux6.IN9
+Z[2] => Mux0.IN8
+Z[2] => Mux1.IN8
+Z[2] => Mux2.IN8
+Z[2] => Mux3.IN8
+Z[2] => Mux4.IN8
+Z[2] => Mux5.IN8
+Z[2] => Mux6.IN8
+o[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|Dice:inst11
+clk => op[0].CLK
+clk => op[1].CLK
+clk => op[2].CLK
+sw => op[0].ENA
+sw => op[1].ENA
+sw => op[2].ENA
+reset => op[0].ACLR
+reset => op[1].ACLR
+reset => op[2].ACLR
+Z[0] <= op[0].DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= op[1].DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= op[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|clk_gen:inst3
+1KHz <= div10_t:inst3.CLK_out
+clock => div10_t:inst.CLK
+100Hz <= div10_t:inst4.CLK_out
+10Hz <= div10_t:inst5.CLK_out
+1Hz <= div10_t:inst6.CLK_out
+
+
+|DiceTest|clk_gen:inst3|div10_t:inst3
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|DiceTest|clk_gen:inst3|div10_t:inst2
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|DiceTest|clk_gen:inst3|div10_t:inst1
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|DiceTest|clk_gen:inst3|div10_t:inst
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|DiceTest|clk_gen:inst3|div10_t:inst4
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|DiceTest|clk_gen:inst3|div10_t:inst5
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|DiceTest|clk_gen:inst3|div10_t:inst6
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|DiceTest|debounce_g:inst5
+Key_out <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 1.CLK
+CLK => 2.CLK
+Key_in => 1.DATAIN
+
+
+|DiceTest|ShowDice:inst7
+Z[0] => Mux0.IN10
+Z[0] => Mux1.IN10
+Z[0] => Mux2.IN10
+Z[0] => Mux3.IN10
+Z[0] => Mux4.IN10
+Z[0] => Mux5.IN10
+Z[0] => Mux6.IN10
+Z[1] => Mux0.IN9
+Z[1] => Mux1.IN9
+Z[1] => Mux2.IN9
+Z[1] => Mux3.IN9
+Z[1] => Mux4.IN9
+Z[1] => Mux5.IN9
+Z[1] => Mux6.IN9
+Z[2] => Mux0.IN8
+Z[2] => Mux1.IN8
+Z[2] => Mux2.IN8
+Z[2] => Mux3.IN8
+Z[2] => Mux4.IN8
+Z[2] => Mux5.IN8
+Z[2] => Mux6.IN8
+o[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|Dice:inst8
+clk => op[0].CLK
+clk => op[1].CLK
+clk => op[2].CLK
+sw => op[0].ENA
+sw => op[1].ENA
+sw => op[2].ENA
+reset => op[0].ACLR
+reset => op[1].ACLR
+reset => op[2].ACLR
+Z[0] <= op[0].DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= op[1].DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= op[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|transferVectorToBit7:inst16
+x[0] => y0.DATAIN
+x[1] => y1.DATAIN
+x[2] => y2.DATAIN
+x[3] => y3.DATAIN
+x[4] => y4.DATAIN
+x[5] => y5.DATAIN
+x[6] => y6.DATAIN
+y6 <= x[6].DB_MAX_OUTPUT_PORT_TYPE
+y5 <= x[5].DB_MAX_OUTPUT_PORT_TYPE
+y4 <= x[4].DB_MAX_OUTPUT_PORT_TYPE
+y3 <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+y2 <= x[2].DB_MAX_OUTPUT_PORT_TYPE
+y1 <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+y0 <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|sevenSegmentDisplayer2:inst15
+x1[0] => Mux0.IN36
+x1[0] => Mux1.IN36
+x1[0] => Mux2.IN36
+x1[0] => Mux3.IN36
+x1[0] => Mux4.IN36
+x1[0] => Mux5.IN36
+x1[0] => Mux6.IN36
+x1[1] => Mux0.IN35
+x1[1] => Mux1.IN35
+x1[1] => Mux2.IN35
+x1[1] => Mux3.IN35
+x1[1] => Mux4.IN35
+x1[1] => Mux5.IN35
+x1[1] => Mux6.IN35
+x1[1] => Mux7.IN19
+x1[1] => Mux8.IN19
+x1[1] => Mux9.IN19
+x1[2] => Mux0.IN34
+x1[2] => Mux1.IN34
+x1[2] => Mux2.IN34
+x1[2] => Mux3.IN34
+x1[2] => Mux4.IN34
+x1[2] => Mux5.IN34
+x1[2] => Mux6.IN34
+x1[2] => Mux7.IN18
+x1[2] => Mux8.IN18
+x1[2] => Mux9.IN18
+x1[3] => Mux0.IN33
+x1[3] => Mux1.IN33
+x1[3] => Mux2.IN33
+x1[3] => Mux3.IN33
+x1[3] => Mux4.IN33
+x1[3] => Mux5.IN33
+x1[3] => Mux6.IN33
+x1[3] => Mux7.IN17
+x1[3] => Mux8.IN17
+x1[3] => Mux9.IN17
+x1[4] => Mux0.IN32
+x1[4] => Mux1.IN32
+x1[4] => Mux2.IN32
+x1[4] => Mux3.IN32
+x1[4] => Mux4.IN32
+x1[4] => Mux5.IN32
+x1[4] => Mux6.IN32
+x1[4] => Mux7.IN16
+x1[4] => Mux8.IN16
+x1[4] => Mux9.IN16
+x2[0] => Mux10.IN36
+x2[0] => Mux11.IN36
+x2[0] => Mux12.IN36
+x2[0] => Mux13.IN36
+x2[0] => Mux14.IN36
+x2[0] => Mux15.IN36
+x2[0] => Mux16.IN36
+x2[1] => Mux10.IN35
+x2[1] => Mux11.IN35
+x2[1] => Mux12.IN35
+x2[1] => Mux13.IN35
+x2[1] => Mux14.IN35
+x2[1] => Mux15.IN35
+x2[1] => Mux16.IN35
+x2[1] => Mux17.IN19
+x2[1] => Mux18.IN19
+x2[1] => Mux19.IN19
+x2[2] => Mux10.IN34
+x2[2] => Mux11.IN34
+x2[2] => Mux12.IN34
+x2[2] => Mux13.IN34
+x2[2] => Mux14.IN34
+x2[2] => Mux15.IN34
+x2[2] => Mux16.IN34
+x2[2] => Mux17.IN18
+x2[2] => Mux18.IN18
+x2[2] => Mux19.IN18
+x2[3] => Mux10.IN33
+x2[3] => Mux11.IN33
+x2[3] => Mux12.IN33
+x2[3] => Mux13.IN33
+x2[3] => Mux14.IN33
+x2[3] => Mux15.IN33
+x2[3] => Mux16.IN33
+x2[3] => Mux17.IN17
+x2[3] => Mux18.IN17
+x2[3] => Mux19.IN17
+x2[4] => Mux10.IN32
+x2[4] => Mux11.IN32
+x2[4] => Mux12.IN32
+x2[4] => Mux13.IN32
+x2[4] => Mux14.IN32
+x2[4] => Mux15.IN32
+x2[4] => Mux16.IN32
+x2[4] => Mux17.IN16
+x2[4] => Mux18.IN16
+x2[4] => Mux19.IN16
+clk => y[0]~reg0.CLK
+clk => y[1]~reg0.CLK
+clk => y[2]~reg0.CLK
+clk => y[3]~reg0.CLK
+clk => y[4]~reg0.CLK
+clk => y[5]~reg0.CLK
+clk => y[6]~reg0.CLK
+clk => flag2.CLK
+clk => flag1.CLK
+clk => DE3~reg0.CLK
+clk => DE1~reg0.CLK
+y[0] <= y[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DE1 <= DE1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DE3 <= DE3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|controlStateToDisplay:inst22
+pulse2 => state.OUTPUTSELECT
+pulse2 => state.OUTPUTSELECT
+pulse2 => state.OUTPUTSELECT
+pulse2 => state.OUTPUTSELECT
+pulse2 => state.OUTPUTSELECT
+pulse2 => process_0.IN1
+clk => x1[0].CLK
+clk => x1[1].CLK
+clk => x1[2].CLK
+clk => x1[3].CLK
+clk => x1[4].CLK
+clk => state[0].CLK
+clk => state[1].CLK
+clk => state[2].CLK
+clk => state[3].CLK
+clk => state[4].CLK
+x[0] => process_0.IN1
+x[0] => state.DATAB
+x[0] => x1[0].DATAIN
+x[1] => process_0.IN1
+x[1] => state.DATAB
+x[1] => x1[1].DATAIN
+x[2] => process_0.IN1
+x[2] => state.DATAB
+x[2] => x1[2].DATAIN
+x[3] => process_0.IN1
+x[3] => state.DATAB
+x[3] => x1[3].DATAIN
+x[4] => process_0.IN1
+x[4] => state.DATAB
+x[4] => x1[4].DATAIN
+y[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= state[3].DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= state[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|transferBitToVector5:inst2
+x4 => y[4].DATAIN
+x3 => y[3].DATAIN
+x2 => y[2].DATAIN
+x1 => y[1].DATAIN
+x0 => y[0].DATAIN
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= x4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13
+S0 <= FullAdder:inst3.sum
+A0 => FullAdder:inst3.x
+reset1 => inst23.ACLR
+reset1 => inst20.ACLR
+reset1 => inst21.ACLR
+reset1 => inst22.ACLR
+reset1 => inst24.ACLR
+Clk => inst23.CLK
+Clk => inst20.CLK
+Clk => inst21.CLK
+Clk => inst22.CLK
+Clk => inst24.CLK
+S1 <= FullAdder:inst.sum
+A1 => FullAdder:inst.x
+S2 <= FullAdder:inst1.sum
+A2 => FullAdder:inst1.x
+S3 <= FullAdder:inst2.sum
+A3 => FullAdder:inst2.x
+S4 <= FullAdder:inst5.sum
+A4 => FullAdder:inst5.x
+explosion <= FullAdder:inst10.carry
+
+
+|DiceTest|final:inst13|FullAdder:inst3
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13|FullAdder:inst
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13|FullAdder:inst1
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13|FullAdder:inst2
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13|FullAdder:inst5
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13|FullAdder:inst10
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13|FullAdder:inst8
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13|FullAdder:inst7
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13|FullAdder:inst6
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|final:inst13|FullAdder:inst9
+sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+z => inst1.IN1
+z => inst3.IN1
+carry <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|judge:inst14
+I1 => op.IN1
+I1 => op.IN1
+CLK => op[1].CLK
+CLK => op[2].CLK
+O1 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|adder_6x5:inst1
+s1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+x1 => inst7.IN0
+x1 => inst5.IN0
+y1 => inst7.IN1
+y1 => inst5.IN1
+s2 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+x2 => inst11.IN0
+x2 => inst12.IN0
+y2 => inst11.IN1
+y2 => inst12.IN1
+s3 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+x3 => inst16.IN0
+x3 => inst17.IN0
+y3 => inst16.IN1
+y3 => inst17.IN1
+s4 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+s5 <= <GND>
+
+
+|DiceTest|controlStateToDisplay:inst12
+pulse2 => state.OUTPUTSELECT
+pulse2 => state.OUTPUTSELECT
+pulse2 => state.OUTPUTSELECT
+pulse2 => state.OUTPUTSELECT
+pulse2 => state.OUTPUTSELECT
+pulse2 => process_0.IN1
+clk => x1[0].CLK
+clk => x1[1].CLK
+clk => x1[2].CLK
+clk => x1[3].CLK
+clk => x1[4].CLK
+clk => state[0].CLK
+clk => state[1].CLK
+clk => state[2].CLK
+clk => state[3].CLK
+clk => state[4].CLK
+x[0] => process_0.IN1
+x[0] => state.DATAB
+x[0] => x1[0].DATAIN
+x[1] => process_0.IN1
+x[1] => state.DATAB
+x[1] => x1[1].DATAIN
+x[2] => process_0.IN1
+x[2] => state.DATAB
+x[2] => x1[2].DATAIN
+x[3] => process_0.IN1
+x[3] => state.DATAB
+x[3] => x1[3].DATAIN
+x[4] => process_0.IN1
+x[4] => state.DATAB
+x[4] => x1[4].DATAIN
+y[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= state[3].DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= state[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|stateChange:inst24
+pulse1 => state[0].CLK
+pulse1 => state[1].CLK
+pulse1 => state[2].CLK
+pulse1 => state[3].CLK
+pulse1 => state[4].CLK
+z[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+z[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+z[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+z[3] <= state[3].DB_MAX_OUTPUT_PORT_TYPE
+z[4] <= state[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|debounce_g:inst9
+Key_out <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 1.CLK
+CLK => 2.CLK
+Key_in => 1.DATAIN
+
+
+|DiceTest|Win_or_Lose:inst21
+WL <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+x4 => inst29.IN0
+x4 => inst27.IN0
+y4 => inst32.IN0
+x3 => inst23.IN0
+x3 => inst21.IN0
+y3 => inst26.IN0
+x2 => inst16.IN0
+x2 => inst14.IN0
+y2 => inst19.IN0
+x1 => inst7.IN0
+x1 => inst9.IN0
+y1 => inst12.IN0
+x0 => inst2.IN0
+x0 => inst.IN0
+y0 => inst6.IN0
+pulse <= pulse2.DB_MAX_OUTPUT_PORT_TYPE
+pulse2 => pulse.DATAIN
+
+
+|DiceTest|transferVectorToBit5:inst19
+x[0] => y0.DATAIN
+x[1] => y1.DATAIN
+x[2] => y2.DATAIN
+x[3] => y3.DATAIN
+x[4] => y4.DATAIN
+y4 <= x[4].DB_MAX_OUTPUT_PORT_TYPE
+y3 <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+y2 <= x[2].DB_MAX_OUTPUT_PORT_TYPE
+y1 <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+y0 <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|transferVectorToBit5:inst20
+x[0] => y0.DATAIN
+x[1] => y1.DATAIN
+x[2] => y2.DATAIN
+x[3] => y3.DATAIN
+x[4] => y4.DATAIN
+y4 <= x[4].DB_MAX_OUTPUT_PORT_TYPE
+y3 <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+y2 <= x[2].DB_MAX_OUTPUT_PORT_TYPE
+y1 <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+y0 <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|buzzer_test:inst
+out <= buzzer:inst.BEEP
+sw => buzzer:inst.sw
+I1 => buzzer:inst.I1
+reset => buzzer:inst.RESET
+clock => div10_t:inst1.CLK
+
+
+|DiceTest|buzzer_test:inst|buzzer:inst
+sw => c2.IN1
+I1 => c1.IN1
+I1 => c2.IN1
+RESET => PULSE.OUTPUTSELECT
+RESET => te.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+CLK => DIVIDER[0].CLK
+CLK => DIVIDER[1].CLK
+CLK => DIVIDER[2].CLK
+CLK => DIVIDER[3].CLK
+CLK => DIVIDER[4].CLK
+CLK => DIVIDER[5].CLK
+CLK => DIVIDER[6].CLK
+CLK => DIVIDER[7].CLK
+CLK => DIVIDER[8].CLK
+CLK => DIVIDER[9].CLK
+CLK => DIVIDER[10].CLK
+CLK => DIVIDER[11].CLK
+CLK => DIVIDER[12].CLK
+CLK => DIVIDER[13].CLK
+CLK => DIVIDER[14].CLK
+CLK => INDEX[0].CLK
+CLK => INDEX[1].CLK
+CLK => INDEX[2].CLK
+CLK => INDEX[3].CLK
+CLK => INDEX[4].CLK
+CLK => COUNT[0].CLK
+CLK => COUNT[1].CLK
+CLK => COUNT[2].CLK
+CLK => COUNT[3].CLK
+CLK => COUNT[4].CLK
+CLK => COUNT[5].CLK
+CLK => COUNT[6].CLK
+CLK => LEN[0].CLK
+CLK => LEN[1].CLK
+CLK => LEN[2].CLK
+CLK => te.CLK
+CLK => PULSE.CLK
+BEEP <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|buzzer_test:inst|div2:inst2
+clk => arr[0].CLK
+clk => arr[1].CLK
+clk => arr[2].CLK
+clk => arr[3].CLK
+clk => arr[4].CLK
+clk => cnt.CLK
+o1 <= cnt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|buzzer_test:inst|div10_t:inst1
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|DiceTest|mario_win_test:inst34
+out <= mario_win:inst.BEEP
+sw => mario_win:inst.sw
+I1 => mario_win:inst.I1
+reset => mario_win:inst.RESET
+clock => div10_t:inst1.CLK
+
+
+|DiceTest|mario_win_test:inst34|mario_win:inst
+sw => c1.IN1
+sw => c1.IN1
+sw => c2.IN1
+I1 => c1.IN1
+I1 => c2.IN1
+RESET => PULSE.OUTPUTSELECT
+RESET => te.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+CLK => DIVIDER[0].CLK
+CLK => DIVIDER[1].CLK
+CLK => DIVIDER[2].CLK
+CLK => DIVIDER[3].CLK
+CLK => DIVIDER[4].CLK
+CLK => DIVIDER[5].CLK
+CLK => DIVIDER[6].CLK
+CLK => DIVIDER[7].CLK
+CLK => DIVIDER[8].CLK
+CLK => DIVIDER[9].CLK
+CLK => DIVIDER[10].CLK
+CLK => DIVIDER[11].CLK
+CLK => DIVIDER[12].CLK
+CLK => DIVIDER[13].CLK
+CLK => DIVIDER[14].CLK
+CLK => INDEX[0].CLK
+CLK => INDEX[1].CLK
+CLK => INDEX[2].CLK
+CLK => INDEX[3].CLK
+CLK => INDEX[4].CLK
+CLK => COUNT[0].CLK
+CLK => COUNT[1].CLK
+CLK => COUNT[2].CLK
+CLK => COUNT[3].CLK
+CLK => COUNT[4].CLK
+CLK => COUNT[5].CLK
+CLK => COUNT[6].CLK
+CLK => LEN[0].CLK
+CLK => LEN[1].CLK
+CLK => LEN[2].CLK
+CLK => LEN[3].CLK
+CLK => te.CLK
+CLK => PULSE.CLK
+BEEP <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|mario_win_test:inst34|div2:inst2
+clk => arr[0].CLK
+clk => arr[1].CLK
+clk => arr[2].CLK
+clk => arr[3].CLK
+clk => arr[4].CLK
+clk => cnt.CLK
+o1 <= cnt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|mario_win_test:inst34|div10_t:inst1
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+
+|DiceTest|det8x8:inst25
+p1 => flag.IN0
+p2 => comb.IN1
+p2 => flag.IN1
+p2 => comb.IN1
+o <= flag.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|mario_lose_test:inst32
+out <= mario_lose:inst.BEEP
+sw => mario_lose:inst.sw
+I1 => mario_lose:inst.I1
+reset => mario_lose:inst.RESET
+clock => div10_t:inst1.CLK
+
+
+|DiceTest|mario_lose_test:inst32|mario_lose:inst
+sw => c1.IN1
+sw => c1.IN1
+sw => c2.IN1
+I1 => c1.IN1
+I1 => c2.IN1
+RESET => PULSE.OUTPUTSELECT
+RESET => te.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => LEN.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => COUNT.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+RESET => INDEX.OUTPUTSELECT
+CLK => DIVIDER[0].CLK
+CLK => DIVIDER[1].CLK
+CLK => DIVIDER[2].CLK
+CLK => DIVIDER[3].CLK
+CLK => DIVIDER[4].CLK
+CLK => DIVIDER[5].CLK
+CLK => DIVIDER[6].CLK
+CLK => DIVIDER[7].CLK
+CLK => DIVIDER[8].CLK
+CLK => DIVIDER[9].CLK
+CLK => DIVIDER[10].CLK
+CLK => DIVIDER[11].CLK
+CLK => DIVIDER[12].CLK
+CLK => DIVIDER[13].CLK
+CLK => DIVIDER[14].CLK
+CLK => INDEX[0].CLK
+CLK => INDEX[1].CLK
+CLK => INDEX[2].CLK
+CLK => INDEX[3].CLK
+CLK => INDEX[4].CLK
+CLK => COUNT[0].CLK
+CLK => COUNT[1].CLK
+CLK => COUNT[2].CLK
+CLK => COUNT[3].CLK
+CLK => COUNT[4].CLK
+CLK => COUNT[5].CLK
+CLK => COUNT[6].CLK
+CLK => LEN[0].CLK
+CLK => LEN[1].CLK
+CLK => LEN[2].CLK
+CLK => LEN[3].CLK
+CLK => te.CLK
+CLK => PULSE.CLK
+BEEP <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|mario_lose_test:inst32|div2:inst2
+clk => arr[0].CLK
+clk => arr[1].CLK
+clk => arr[2].CLK
+clk => arr[3].CLK
+clk => arr[4].CLK
+clk => cnt.CLK
+o1 <= cnt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DiceTest|mario_lose_test:inst32|div10_t:inst1
+CLK_out <= 2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 5.CLK
+CLK => 3.CLK
+CLK => 1.CLK
+CLK => 2.CLK
+
+

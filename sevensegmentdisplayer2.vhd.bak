@@ -1,0 +1,80 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity sevenSegmentDisplayer2 is
+port (x: in STD_LOGIC_vector(4 downto 0);
+		clk : in STD_LOGIC;
+		--x 8421
+		y : out STD_LOGIC_vector(6 downto 0);
+		DE1 : out STD_LOGIC);
+		--y 13-0 -> a10 b10 c10 ... f10 g10 / a1 b1 ... f1 g1
+end sevenSegmentDisplayer2;
+
+architecture a of sevenSegmentDisplayer2 is 
+signal flag: STD_LOGIC :='0';
+	begin
+		process(clk)
+			begin
+				if clk'event and clk='1' and flag='0' then  --digits
+					DE1<='1';
+					case x is
+						when "00000" => y<= "1111110";
+						when "00001" => y<= "0110000";
+						when "00010" => y<= "1101101";
+						when "00011" => y<= "1111001";
+						when "00100" => y<= "0110011";
+						when "00101" => y<= "1011011";
+						when "00110" => y<= "1011111";
+						when "00111" => y<= "1110010";
+						when "01000" => y<= "1111111";
+						when "01001" => y<= "1111011";
+						
+						when "01010" => y<= "1111110";
+						when "01011" => y<= "0110000";
+						when "01100" => y<= "1101101";
+						when "01101" => y<= "1111001";
+						when "01110" => y<= "0110011";
+						when "01111" => y<= "1011011";
+						when "10000" => y<= "1011111";
+						when "10001" => y<= "1110010";
+						when "10010" => y<= "1111111";
+						when "10011" => y<= "1111011";
+						
+						when "10100" => y<= "1111110";
+						when "10101" => y<= "0110000";
+						when others =>  y<= "0000000";
+						flag <= '1';
+					end case;
+				elsif clk'event and clk='1' and flag='1' then --decimal
+					DE1<='0';
+					case x is
+						when "00000" => y<= "1111110";
+						when "00001" => y<= "1111110";
+						when "00010" => y<= "1111110";
+						when "00011" => y<= "1111110";
+						when "00100" => y<= "1111110";
+						when "00101" => y<= "1111110";
+						when "00110" => y<= "1111110";
+						when "00111" => y<= "1111110";
+						when "01000" => y<= "1111110";
+						when "01001" => y<= "1111110";
+						
+						when "01010" => y<= "0110000";
+						when "01011" => y<= "0110000";
+						when "01100" => y<= "0110000";
+						when "01101" => y<= "0110000";
+						when "01110" => y<= "0110000";
+						when "01111" => y<= "0110000";
+						when "10000" => y<= "0110000";
+						when "10001" => y<= "0110000";
+						when "10010" => y<= "0110000";
+						when "10011" => y<= "0110000";
+						
+						when "10100" => y<= "1101101";
+						when "10101" => y<= "1101101";	
+					   when others  => y<= "0000000";	
+					end case;
+					flag <= '0';
+				end if;
+			end process ;	
+	end a ;

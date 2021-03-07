@@ -1,0 +1,13 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity delaySW is
+port (sw, reset: in STD_LOGIC;
+		x: in STD_LOGIC;
+		y: out STD_LOGIC);
+end delaySW;
+
+architecture a of delaySW is
+	begin	
+	y <= transport x after 10 ms;
+end a ;
